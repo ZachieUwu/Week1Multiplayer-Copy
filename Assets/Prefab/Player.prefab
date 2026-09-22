@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 49902384095139299}
   - component: {fileID: 2789631504075875524}
   - component: {fileID: 2859806681333546695}
+  - component: {fileID: 2780431171705888018}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -294,7 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
-  GlobalObjectIdHash: 3155804207
+  GlobalObjectIdHash: 3395927354
   InScenePlacedSourceGlobalObjectIdHash: 3395927354
   m_InScenePlacedDisabledByDefault: 1
   DeferredDespawnTick: 0
@@ -474,3 +475,16 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b44f88714326d99458c5d3be66f4b6a9, type: 2}
   - {fileID: 2100000, guid: b199ad67695c78546ad07043b53ed004, type: 2}
   - {fileID: 2100000, guid: 7424ad089ed2d7f47b640b5e15ec2a37, type: 2}
+--- !u!114 &2780431171705888018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6816540600051838344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6a3a773be03612458063c9666b00fd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LocalCameraPlayerTarget
+  ShowTopMostFoldoutHeaderGroup: 1

@@ -623,6 +623,8 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
+  - component: {fileID: 330585551}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -748,6 +750,47 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &330585548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0825ab17b1124c4f989c79ff45e77db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraTopDown
+  offset: {x: 0, y: 5, z: -8}
+  followSpeed: 10
+--- !u!114 &330585551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.NetworkObject
+  GlobalObjectIdHash: 3343114664
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  m_InScenePlacedDisabledByDefault: 0
+  DeferredDespawnTick: 0
+  Ownership: 1
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  m_InScenePlaced: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 0
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+  SyncOwnerTransformWhenParented: 1
+  AllowOwnerToParent: 0
 --- !u!1 &348042893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2680,75 +2723,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042981172}
   m_CullTransparentMesh: 1
---- !u!1001 &1057077620
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3412042749392184245, guid: d4b9cc2256bd31c468e8be6ad796e5ea, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.984401
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412042749392184245, guid: d4b9cc2256bd31c468e8be6ad796e5ea, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.2001395
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412042749392184245, guid: d4b9cc2256bd31c468e8be6ad796e5ea, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 4.2192273
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412042749392184245, guid: d4b9cc2256bd31c468e8be6ad796e5ea, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412042749392184245, guid: d4b9cc2256bd31c468e8be6ad796e5ea, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412042749392184245, guid: d4b9cc2256bd31c468e8be6ad796e5ea, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412042749392184245, guid: d4b9cc2256bd31c468e8be6ad796e5ea, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412042749392184245, guid: d4b9cc2256bd31c468e8be6ad796e5ea, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412042749392184245, guid: d4b9cc2256bd31c468e8be6ad796e5ea, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3412042749392184245, guid: d4b9cc2256bd31c468e8be6ad796e5ea, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407488305245362086, guid: d4b9cc2256bd31c468e8be6ad796e5ea, type: 3}
-      propertyPath: m_InScenePlaced
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407488305245362086, guid: d4b9cc2256bd31c468e8be6ad796e5ea, type: 3}
-      propertyPath: GlobalObjectIdHash
-      value: 1362256957
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407488305245362086, guid: d4b9cc2256bd31c468e8be6ad796e5ea, type: 3}
-      propertyPath: m_InScenePlacedDisabledByDefault
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6816540600051838344, guid: d4b9cc2256bd31c468e8be6ad796e5ea, type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d4b9cc2256bd31c468e8be6ad796e5ea, type: 3}
 --- !u!1 &1157426960
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,9 +2972,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MultiplayerMenu
   ShowTopMostFoldoutHeaderGroup: 1
-  menuUI: {fileID: 0}
-  joinCodeText: {fileID: 0}
-  statusTXT: {fileID: 0}
+  menuUI: {fileID: 56366669}
+  joinCodeText: {fileID: 835738676}
+  statusTXT: {fileID: 666837277}
 --- !u!4 &1230739537
 Transform:
   m_ObjectHideFlags: 0
@@ -3041,7 +3015,7 @@ Transform:
   m_GameObject: {fileID: 1285528998}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.43536, y: 0.53, z: -4.9348593}
+  m_LocalPosition: {x: 12.9, y: 0.53, z: -4.9348593}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3487,7 +3461,7 @@ Transform:
   m_GameObject: {fileID: 1548170015}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.96464, y: 0.53, z: -5.33486}
+  m_LocalPosition: {x: -2.08, y: 0.53, z: -5.33486}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3947,4 +3921,3 @@ SceneRoots:
   - {fileID: 1710686661}
   - {fileID: 56366673}
   - {fileID: 1376592143}
-  - {fileID: 1057077620}
